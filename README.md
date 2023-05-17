@@ -5,7 +5,7 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+## 주제선정배경 및 필요성
 
 What things you need to install the software and how to install them
 
@@ -13,7 +13,7 @@ What things you need to install the software and how to install them
 Give examples
 ```
 
-### Installing
+## 분석 목적
 
 A step by step series of examples that tell you how to get a development env running
 
@@ -31,11 +31,31 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## 데이터
+
+### 데이터 획득
+
+### 데이터 이해
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+# 분석
+
+## EDA
+
+
+## 전처리
+
+## 모델링
+
+## 시각화
+
+## 평가
+
+
+## 결과
+
+
 
 Explain what these tests test and why
 
