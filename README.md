@@ -1,13 +1,15 @@
 # datamining_teamproject
 데이터마이닝 팀프로젝트 
 
-## 주제 : 전동킥보드 불법주차 장소의 특징을 반영한 주차장 입지 제안
+## 주제 : 전동킥보드 불법주차 장소 분석 및 주차장 입지선정
+
+
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## 주제선정배경 및 필요성
 
-What things you need to install the software and how to install them
+
 
 ```
 Give examples
