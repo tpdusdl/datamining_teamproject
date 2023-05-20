@@ -5,9 +5,9 @@
 
 
 ## 주제선정배경 및 필요성
-(https://github.com/tpdusdl/datamining_teamproject/assets/134132939/3dd89d38-891f-47c8-abaa-07d19ae44648)
-<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/3dd89d38-891f-47c8-abaa-07d19ae44648"  width="500" height="370">
-전동킥보드 이용자 수 증가에 따라 불법주차문제 수도 증가하고 있다.
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/3dd89d38-891f-47c8-abaa-07d19ae44648"  width="450" height="370">
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/187dc226-f1cc-4ff1-9c3a-30f07b70a540"  width="450" height="370">
+최근 전동킥보드 이용자 수 증가에 따라 불법주차와 관련된 신고도 증가하고 있다.
 전동킥보드 불법주차는 보행자 안전문제, 인력낭비 등 여러가지 문제를 야기하므로 주차문제를 해결해야한다.
 
 
