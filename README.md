@@ -74,11 +74,9 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
 
-##데이터 출처
+## 데이터 출처
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
