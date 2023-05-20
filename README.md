@@ -40,7 +40,7 @@ End with an example of getting some data out of the system or using it for a lit
 ## 데이터
 
 ### 변수설정
-
+서울시 자치구 중 견인신고 수가 많은 상위 4개 구(마포구, 송파구, 동작구, 영등포구)를 선정해 각 구마다 법정동을 기준으로 나눠 동마다 아래 변수에 해당하는 사건 혹은 장소의 수를 획득한 데이터를 통해 할당해주었다.   
 -견인수  
 -pc방수  
 -카페수  
@@ -73,9 +73,6 @@ End with an example of getting some data out of the system or using it for a lit
 *[공공자전거 대여소 정보](http://data.seoul.go.kr/dataList/OA-13252/F/1/datasetView.do)  
 *[서울교통공사 1_8호선 역사 좌표(위경도) 정보]( https://www.data.go.kr/data/15099316/fileData.do)     
 *[소상공인시장진흥공단 상가(상권)정보 - 서울 ](https://www.data.go.kr/data/15083033/fileData.do )  
-
-
-### 데이터 이해
 
 
 
