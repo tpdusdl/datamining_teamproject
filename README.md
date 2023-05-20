@@ -8,7 +8,8 @@
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## 주제선정배경 및 필요성
-
+전동킥보드 이용자 수 증가에 따라 불법주차문제 수도 증가하고 있다.
+전동킥보드 불법주차는 보행자 안전문제, 인력낭비 등 여러가지 문제를 야기하므로 주차문제를 해결해야한다.
 
 
 ```
@@ -16,6 +17,7 @@ Give examples
 ```
 
 ## 분석 목적
+불법주차가 많은 지역은 어떤 특징을 가지고 있는지 파악하고, 결과를 토대로 최적의 주차장 입지를 선정하고자 한다.
 
 A step by step series of examples that tell you how to get a development env running
 
