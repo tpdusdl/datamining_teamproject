@@ -85,21 +85,29 @@ End with an example of getting some data out of the system or using it for a lit
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/85bc0b3b-61df-46e1-afb9-679bf8811d69">
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/aa091706-9b00-4d6f-ab67-09a53c4e3b28">
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/558c3542-cd12-4ba7-ba86-41eb60d57fcb">   
+
+
 대표적으로 마포구에 저장된 데이터를 확인해보겠다.   
 결측치 여부를 확인해 본 결과 모든 feature에 대해 존재하지 않음을 확인했다.   
 feature의 type은 모두 int로 구성되어 있음을 알 수 있다.   
 feature 간의 수치 차이가 다소 존재하기 때문에 뒤이어 분석할 clustring을 위해 scaling이 필요함을 확인했다.   
-<img src="">
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/48d61f38-b7f5-4b7d-97bf-cd5baac4fecf">   
+
+
+각 feature들의 histogram을 확인해 보았다.   
 
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/363d3bba-f945-46e4-b0d6-4666abd59349">   
 견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.6 이하인경우 분석에 악영향을 미칠 것으로 파악하여 버스정류장수, 아파트수, 약국수, 따릉이대여소수 변수들은 삭제했다.   
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/e0005fcd-68a5-40c4-a2b0-5ad6e22ca4d5">   
-3개 feature을 삭제한 후의 상관관계를 다시 확인해 보았다.
-
+3개 feature을 삭제한 후의 상관관계를 다시 확인해 보았다.   
+모든 feature가 견인수와의 상관관계가 0.6이상임을 확인하고 clustering을 진행하겠다.
 
 ## 전처리
+견인수, 카페수, 음식점수 feature 들이 다른 나머지 feature 들의 data 분포보다 큰 것으로 확인되어 k-means와 같은 알고리즘에서 거리 기반의 연산에 영향을 줄이기 위해 scaler = StandardScaler()을 사용하였다.   
 
 ## 모델링
+### k-means
+
 
 ## 시각화
 
