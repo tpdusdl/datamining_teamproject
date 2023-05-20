@@ -4,9 +4,6 @@
 ## 주제 : 전동킥보드 불법주차 장소 분석 및 주차장 입지선정
 
 
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ## 주제선정배경 및 필요성
 전동킥보드 이용자 수 증가에 따라 불법주차문제 수도 증가하고 있다.
 전동킥보드 불법주차는 보행자 안전문제, 인력낭비 등 여러가지 문제를 야기하므로 주차문제를 해결해야한다.
