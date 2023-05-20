@@ -19,9 +19,7 @@ Give examples
 ## 분석 목적
 불법주차가 많은 지역은 어떤 특징을 가지고 있는지 파악하고, 결과를 토대로 최적의 주차장 입지를 선정하고자 한다.
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
 
 ```
 Give the example
@@ -36,6 +34,8 @@ until finished
 End with an example of getting some data out of the system or using it for a little demo
 
 ## 데이터
+
+
 
 ### 데이터 획득
 
@@ -58,8 +58,10 @@ Explain how to run the automated tests for this system
 
 
 ## 결과
-
-
+1.마포구
+2.영등포구
+3.송파구
+4.동작구
 
 Explain what these tests test and why
 
