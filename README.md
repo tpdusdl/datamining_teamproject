@@ -84,11 +84,12 @@ End with an example of getting some data out of the system or using it for a lit
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/c26ec7a8-98e2-488b-9753-0f03d5065b8b" width="300" height="300">
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/85bc0b3b-61df-46e1-afb9-679bf8811d69">
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/aa091706-9b00-4d6f-ab67-09a53c4e3b28">
-
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/558c3542-cd12-4ba7-ba86-41eb60d57fcb">   
 대표적으로 마포구에 저장된 데이터를 확인해보겠다.   
 결측치 여부를 확인해 본 결과 모든 feature에 대해 존재하지 않음을 확인했다.   
 feature의 type은 모두 int로 구성되어 있음을 알 수 있다.   
 feature 간의 수치 차이가 다소 존재하기 때문에 뒤이어 분석할 clustring을 위해 scaling이 필요함을 확인했다.   
+<img src="">
 
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/363d3bba-f945-46e4-b0d6-4666abd59349">   
 견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.6 이하인경우 분석에 악영향을 미칠 것으로 파악하여 버스정류장수, 아파트수, 약국수, 따릉이대여소수 변수들은 삭제했다.   
