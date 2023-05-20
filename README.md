@@ -9,9 +9,9 @@
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/3dd89d38-891f-47c8-abaa-07d19ae44648" width="350" height="300">
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/187dc226-f1cc-4ff1-9c3a-30f07b70a540" width="300" height="300">
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/6da922ee-43f0-4565-a2e6-249deb8c118d" width="1000" height="200">
-<기사출처> https://skyedaily.com/news/news_view.html?ID=185976
+<기사출처> https://skyedaily.com/news/news_view.html?ID=185976  
 
-
+<br/>
 최근 전동 킥보드에 대한 수요가 계속해서 증가함과 동시에 불법주차로 인한 신고 및 안전사고에 대한 우려 또한 증가하는 추세이고 불편함을 표하는 시민들의 목소리도 점점 커지고 있다. 이에 따라 각 지자체에서 대응 방안을 내놓았지만 당장 눈앞에 있는 문제를 해결하기에 급급해 보인다.
 이러한 전동 킥보드 불법주차는 통행방해, 보행자 안전 문제, 인력 낭비, 안전사고 등 여러 문제점을 야기하기에 근본적으로 문제를 해결할 필요가 있다.
 
