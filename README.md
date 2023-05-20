@@ -10,8 +10,7 @@
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/187dc226-f1cc-4ff1-9c3a-30f07b70a540" width="300" height="300">
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/6da922ee-43f0-4565-a2e6-249deb8c118d" width="1000" height="200">
 <기사출처> https://skyedaily.com/news/news_view.html?ID=185976  
-
-
+<br/>
 최근 전동 킥보드에 대한 수요가 계속해서 증가함과 동시에 불법주차로 인한 신고 및 안전사고에 대한 우려 또한 증가하는 추세이고 불편함을 표하는 시민들의 목소리도 점점 커지고 있다. 이에 따라 각 지자체에서 대응 방안을 내놓았지만 당장 눈앞에 있는 문제를 해결하기에 급급해 보인다.
 이러한 전동 킥보드 불법주차는 통행방해, 보행자 안전 문제, 인력 낭비, 안전사고 등 여러 문제점을 야기하기에 근본적으로 문제를 해결할 필요가 있다.
 
@@ -42,6 +41,13 @@ End with an example of getting some data out of the system or using it for a lit
 
 
 ### 데이터 획득
+서울시 전동 킥보드 견인현황 : https://data.seoul.go.kr/dataList/OA-21304/S/1/datasetView.do
+서울시 버스 정류소 위치 정보 : http://data.seoul.go.kr/dataList/OA-15067/S/1/datasetView.do
+서울시 고등학교 기본정보 : http://data.seoul.go.kr/dataList/OA-20557/S/1/datasetView.do
+서울시 대학 및 전문대학 DB정보 (한국어) : http://data.seoul.go.kr/dataList/OA-12974/S/1/datasetView.do
+공공자전거 대여소 정보 : http://data.seoul.go.kr/dataList/OA-13252/F/1/datasetView.do
+서울교통공사 1_8호선 역사 좌표(위경도) 정보 : https://www.data.go.kr/data/15099316/fileData.do
+소상공인시장진흥공단 상가(상권)정보 - 서울 : https://www.data.go.kr/data/15083033/fileData.do
 
 ### 데이터 이해
 
