@@ -21,7 +21,7 @@ Give examples
 
 ## 분석 목적
 전동 킥보드의 불법 주차 문제를 수요에 충족하지 못하는 주차 스테이션의 수로 보고 전동 킥보드 주차장 증설을 제안함과 동시에 주차장이 필요한 입지를 구체적으로 선정해 주는 것을 분석 목적으로 한다.
-불법주차가 많은 지역은 어떤 특징을 가지고 있는지 파악하고, 결과를 토대로 최적의 주차장 입지를 선정하고자 한다.
+불법주차가 많은 지역은 어떤 특징을 가지고 있는지 파악하고, 파악한 지역의 특징을 반영하여 최적의 주차장 입지를 선정하고자 한다.
 
 
 
@@ -39,6 +39,30 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## 데이터
 
+### 변수설정
+
+-견인수
+-pc방수
+-카페수
+-따릉이대여소 수
+-기숙사/고시원 수
+-독서실 수
+-약국 수
+-편의점 수
+-숙박업 수
+-학원 수
+-병원 수
+-부동산 수
+-양식집 수
+-한식집 수
+-중식집 수
+-일식집 수
+-음식점 전체수
+-동물병원 수
+-아파트 수
+-버스정류장 수
+
+총 20개의 feature 사용
 
 
 ### 데이터 획득
@@ -50,9 +74,10 @@ End with an example of getting some data out of the system or using it for a lit
 *[서울교통공사 1_8호선 역사 좌표(위경도) 정보]( https://www.data.go.kr/data/15099316/fileData.do)     
 *[소상공인시장진흥공단 상가(상권)정보 - 서울 ](https://www.data.go.kr/data/15083033/fileData.do )  
 
+
 ### 데이터 이해
 
-Explain how to run the automated tests for this system
+
 
 # 분석
 
