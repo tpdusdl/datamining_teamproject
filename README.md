@@ -41,7 +41,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ### 변수설정
 
--:circle:견인수  
+-견인수  
 -pc방수  
 -카페수  
 -따릉이대여소 수  
