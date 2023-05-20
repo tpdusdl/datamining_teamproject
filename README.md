@@ -43,11 +43,11 @@ End with an example of getting some data out of the system or using it for a lit
 
 ### 데이터 획득
 *[서울시 전동 킥보드 견인현황]( https://data.seoul.go.kr/dataList/OA-21304/S/1/datasetView.do)   
-*[서울시 버스 정류소 위치 정보]( http://data.seoul.go.kr/dataList/OA-15067/S/1/datasetView.do)
-*[서울시 고등학교 기본정보]( http://data.seoul.go.kr/dataList/OA-20557/S/1/datasetView.do)
-*[서울시 대학 및 전문대학 DB정보 (한국어)](http://data.seoul.go.kr/dataList/OA-12974/S/1/datasetView.do)
-*[공공자전거 대여소 정보](http://data.seoul.go.kr/dataList/OA-13252/F/1/datasetView.do)
-*[서울교통공사 1_8호선 역사 좌표(위경도) 정보]( https://www.data.go.kr/data/15099316/fileData.do)   
+*[서울시 버스 정류소 위치 정보]( http://data.seoul.go.kr/dataList/OA-15067/S/1/datasetView.do)  
+*[서울시 고등학교 기본정보]( http://data.seoul.go.kr/dataList/OA-20557/S/1/datasetView.do)  
+*[서울시 대학 및 전문대학 DB정보 (한국어)](http://data.seoul.go.kr/dataList/OA-12974/S/1/datasetView.do)  
+*[공공자전거 대여소 정보](http://data.seoul.go.kr/dataList/OA-13252/F/1/datasetView.do)  
+*[서울교통공사 1_8호선 역사 좌표(위경도) 정보]( https://www.data.go.kr/data/15099316/fileData.do)     
 *[소상공인시장진흥공단 상가(상권)정보 - 서울 ](https://www.data.go.kr/data/15083033/fileData.do )  
 
 ### 데이터 이해
