@@ -42,7 +42,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 
 ### 데이터 획득
-서울시 전동 킥보드 견인현황 : https://data.seoul.go.kr/dataList/OA-21304/S/1/datasetView.do   
+*[서울시 전동 킥보드 견인현황]( https://data.seoul.go.kr/dataList/OA-21304/S/1/datasetView.do)   
 서울시 버스 정류소 위치 정보 : http://data.seoul.go.kr/dataList/OA-15067/S/1/datasetView.do   
 서울시 고등학교 기본정보 : http://data.seoul.go.kr/dataList/OA-20557/S/1/datasetView.do   
 서울시 대학 및 전문대학 DB정보 (한국어) : http://data.seoul.go.kr/dataList/OA-12974/S/1/datasetView.do   
