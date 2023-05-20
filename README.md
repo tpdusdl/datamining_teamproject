@@ -107,7 +107,11 @@ feature 간의 수치 차이가 다소 존재하기 때문에 뒤이어 분석�
 
 ## 모델링
 ### k-means
-
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/6fa93596-1d2c-4a90-8af2-47dec20f6757">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/6e434e57-aa16-42fa-aa48-64df7fa9c800">   
+종합적으로 결과를 참고하였을때 n_cluster=4, algorithm=elkan 을 사용하기로 했다.
+kmeans = KMeans(n_clusters=4, algorithm= 'elkan', random_state=0)
+kmeans.fit(scaled_data)
 
 ## 시각화
 
