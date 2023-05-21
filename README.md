@@ -115,7 +115,7 @@ feature 간의 수치 차이가 다소 존재하기 때문에 뒤이어 분석�
 kmeans = KMeans(n_clusters=4, algorithm= 'elkan', random_state=0)
 kmeans.fit(scaled_data)
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/c1c1c9a6-4a13-43a8-a646-b391dab25419">   
-k-means결과 4개의 클러스터들의 특징은 다음과 같다.   
+k-means 결과 4개의 클러스터들의 특징은 다음과 같다.   
 cluster1 : 독서실, 기숙사,고시원이 많은 지역   
 
 cluster2 : 특징이 없음.   
@@ -126,8 +126,22 @@ cluster4 : 숙박업, 양식집이 많은 지역
 
 
 ### agglomerative
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/2489d175-77ff-42e8-bec1-1694a13d69d2">   
 
+silhouette score를 고려해 n_clusters=4, linkage='average' 를 사용하기로 했다.   
 
+agg = AgglomerativeClustering(n_clusters=4, linkage='average')   
+labels=agg.fit_predict(scaled_data)   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/a6683b36-9052-499e-bd8c-2e466d8bb129">   
+
+Agglomerative 결과 4개의 클러스터들의 특징은 다음과 같다.
+cluster1 : pc방수, 독서실 수, 동물병원수가 많은 지역   
+
+cluster2 : 숙박업, 양식집, 카페수가 많은 지역   
+
+cluster3 : 특징이 없다.   
+
+cluster4 : 기숙사/고시원수, 한식집이 많은 지역
 
 ## 시각화
 
