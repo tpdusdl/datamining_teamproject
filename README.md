@@ -158,30 +158,68 @@ cluster label 출력 결과, Cluster Labels: [-1  0 -1  0 -1 -1 -1  0 -1 -1 -1 -
 뒤이어 후술할 3개 구(송파구, 동작구, 영등포구)에 대해서는 마포구 분석과정과 매우 유사하게 진행되었다.
 ## 송파구
 ### EDA
-<img src="">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/3b5aea96-bcfc-4b8c-81be-c7646ce79fbf">   
 송파구 feature들의 데이터 분포를 확인해본 결과, 데이터 scaling이 필요하다고 판단했다.   
-<img src="">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/57c558d0-e832-4893-9152-8c44e0035c78">   
 견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.5 이하인경우인 약국수, 동물병원수, 지하철역수, 숙박업소수, 고등학교수, 병원 수 는 삭제했다.   
-<img src="">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/7417db26-8020-4df0-87f2-0b3f763cee76">   
 삭제 후 상관계수에 이상이 없음을 확인하고 clustering을 진행했다.   
 
+### 전처리
+scaler = StandardScaler()   
+df_scaled = scaler.fit_transform(df)   
+
 ### k-means
-<img src="">   
-<img src="">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/657e5f7d-c0fb-4a68-8749-c6bd589dd0c6">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/53bc6e38-86ba-48e5-a85a-08b929f364eb">   
 
 종합적으로 결과를 참고하였을 때 n_cluster=3, algorithm=elkan 을 사용하기로 했다.   
 kmeans = KMeans(n_clusters=3, algorithm= 'elkan', random_state=0)   
 kmeans.fit(df_scaled)   
 
 ### agglomerative
-<img src="">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/1d2bae85-8c93-4a99-80a4-5d6405fc2aa6">   
 
 agg = AgglomerativeClustering(n_clusters=3)    
 agg.fit(df_scaled)   
 
 ### dbscan
-<img src="">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/ab231329-d5e2-4786-9d57-8b0e3b8649e2">   
+
 전부 이상치로 분류되어 의미 없는 결과가 나왔으므로 분석 알고리즘에서 제외했다.
+
+## 동작구
+### EDA
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/3b5aea96-bcfc-4b8c-81be-c7646ce79fbf">   
+동작구 feature들의 데이터 분포를 확인해본 결과, 데이터 scaling이 필요하다고 판단했다.   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/57c558d0-e832-4893-9152-8c44e0035c78">   
+견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.7 이하인경우인 기숙사,학교,pc방 은 삭제했다.    
+
+### 전처리
+scaler = StandardScaler()   
+df1_scaled = scaler.fit_transform(df1)   
+
+### k-means
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/657e5f7d-c0fb-4a68-8749-c6bd589dd0c6">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/53bc6e38-86ba-48e5-a85a-08b929f364eb">   
+
+종합적으로 결과를 참고하였을 때 n_cluster=3, algorithm=elkan 을 사용하기로 했다.   
+n_clusters = 3   
+kmeans =KMeans(n_clusters = n_clusters, algorithm= 'elkan')   
+kmeans.fit(df1_scaled)   
+
+### agglomerative
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/1d2bae85-8c93-4a99-80a4-5d6405fc2aa6">   
+
+agg = AgglomerativeClustering(n_clusters=3, linkage='ward')   
+agg_labels=agg.fit_predict(df1_scaled)    
+
+### dbscan
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/ab231329-d5e2-4786-9d57-8b0e3b8649e2">   
+
+Cluster Labels: [ 0 -1  0 -1 -1  0 -1 -1 -1]   
+dbscan결과 위와 같이 나왔고 이는 noise가 많고 clustering이 잘 되었다고 판단하기 어려워 해당 방법론을 기각했다.   
+
 
 ## 결론
 ### 마포구
