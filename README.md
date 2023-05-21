@@ -273,6 +273,8 @@ dbscan결과 위와 같이 나왔고 이는 noise가 많고 clustering이 잘 �
 ### 마포구
 전체적으로 실루엣 점수를 비교하였을 때, agglomerative 의 결과가 가장 좋다고 판단하였다.   
 best algorithm: agglomerative n_clusters:4, linkage: average, 실루엣 점수:0.4011545610076085   
+![image](https://github.com/tpdusdl/datamining_teamproject/assets/74286434/b8988e4f-96d0-46ba-b03b-a74010fbf33d)
+
 cluster1 : pc방수, 독서실 수, 동물병원수가 많은 지역   
 
 cluster2 : 숙박업, 양식집, 카페수가 많은 지역   
