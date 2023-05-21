@@ -151,9 +151,11 @@ cluster4 : 기숙사/고시원수, 한식집이 많은 지역
 
 ### dbscan
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/8af719bb-961c-4b21-9dce-22bbb732aa4b">   
+
 Best Silhouette Score는 'eps': 1.5, 'min_samples': 3일 때, Silhouette Score: 0.20374381429350133로 나왔다.   
-cluster label 출력 결과, Cluster Labels: [-1  0 -1  0 -1 -1 -1  0 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1  0 -1  0  0  -1  0]   
+cluster label 출력 결과, Cluster Labels: [-1  0 -1  0 -1 -1 -1  0 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1  0 -1  0  0  -1  0]    
 위와 같이 나왔고 이는 noise가 매우 많고 clustering이 잘 되었다고 판단하기 어려워 해당 방법론을 기각했다.   
+
 
 뒤이어 후술할 3개 구(송파구, 동작구, 영등포구)에 대해서는 마포구 분석과정과 매우 유사하게 진행되었다.
 ## 송파구
