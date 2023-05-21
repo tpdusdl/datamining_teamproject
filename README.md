@@ -186,6 +186,11 @@ agg.fit(df_scaled)
 ### dbscan
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/ab231329-d5e2-4786-9d57-8b0e3b8649e2">   
 
+dbscan = DBSCAN(min_samples=2)   
+dbscan.fit(df_scaled)   
+assignments_X_train = dbscan.labels_   
+print(assignments_X_train)   
+Cluster Labels : [-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]   
 전부 이상치로 분류되어 의미 없는 결과가 나왔으므로 분석 알고리즘에서 제외했다.
 
 ## 동작구
@@ -225,14 +230,14 @@ dbscan결과 위와 같이 나왔고 이는 noise가 많고 clustering이 잘 �
 
 ## 영등포구
 ### EDA
-<img src="">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/456a5e10-4cd0-4ab2-9453-f1d97a597d18">   
 
 영등포구 feature들의 데이터 분포를 확인해본 결과, 데이터 scaling이 필요하다고 판단했다.   
 
 견인수에 몇 가지의 이상치가 발견돼 효과적인 clustering 을 위해 7,15,23 행을 제거했다.   
 df2 = df2.iloc[:,1:]   
 df2 = df2.drop(df2.index[[7, 15, 23]])   
-<img src="">    
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/358ab80f-702d-49e2-bc82-2b30aa21555a">    
 
 견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.5 이하인 경우인 역, 기숙사,학교, pc방, 숙박업, 약국 , 병원, 중식 은 제외했다.
 
@@ -241,21 +246,21 @@ scaler = StandardScaler()
 df2_scaled = scaler.fit_transform(df2)
 
 ### k-means
-<img src="">     
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/916a4b1a-d968-46a3-82b8-01d47abfe589">     
 
 위 결과를 참고하였을 때 실루엣 스코어는 n=2 일때 가장 높지만 스코어와 클러스터링 된 결과를 봤을때 최적의 결과는 n=5 일때로 판단했다.   
 kmeans = KMeans(n_clusters=5, algorithm='elkan', random_state=0)   
 kmeans.fit(df2_scaled)    
 
 ### agglomerative
-<img src="">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/84e9be37-7b47-4b13-9e52-9ce8b73a519b">   
 
 agg = AgglomerativeClustering(n_clusters=4,linkage='single')   
 agg.fit(df2_scaled)   
 assignments_X_train = agg.labels_   
 
 ### dbscan
-<img src="">    
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/0bbbdfb9-a031-44be-93ea-ab308d3b0b80">    
 
 db = DBSCAN(eps=1.5, min_samples=2)   
 cluster_labels = db.fit_predict(df2_scaled)   
