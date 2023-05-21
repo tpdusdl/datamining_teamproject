@@ -244,7 +244,7 @@ df2 = df2.drop(df2.index[[7, 15, 23]])
 견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.5 이하인 경우인 역, 기숙사,학교, pc방, 숙박업, 약국 , 병원, 중식 은 제외했다.
 
 ### 전처리
-scaler = StandardScaler()
+scaler = StandardScaler()   
 df2_scaled = scaler.fit_transform(df2)
 
 ### k-means
