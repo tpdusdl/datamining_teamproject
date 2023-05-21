@@ -190,9 +190,9 @@ agg.fit(df_scaled)
 
 ## 동작구
 ### EDA
-<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/3b5aea96-bcfc-4b8c-81be-c7646ce79fbf">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/44f54187-6cea-4785-ae8f-7bc2a11a4369">   
 동작구 feature들의 데이터 분포를 확인해본 결과, 데이터 scaling이 필요하다고 판단했다.   
-<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/57c558d0-e832-4893-9152-8c44e0035c78">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/7c21135a-5b3f-481a-9fde-bf97c66a59a4">   
 견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.7 이하인경우인 기숙사,학교,pc방 은 삭제했다.    
 
 ### 전처리
@@ -200,22 +200,21 @@ scaler = StandardScaler()
 df1_scaled = scaler.fit_transform(df1)   
 
 ### k-means
-<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/657e5f7d-c0fb-4a68-8749-c6bd589dd0c6">   
-<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/53bc6e38-86ba-48e5-a85a-08b929f364eb">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/3c13b8f1-09fe-4a7a-8110-3eafb359360d">     
 
-종합적으로 결과를 참고하였을 때 n_cluster=3, algorithm=elkan 을 사용하기로 했다.   
+위 결과를 참고하였을 때 n_cluster=3, algorithm=elkan 을 사용하기로 했다.   
 n_clusters = 3   
 kmeans =KMeans(n_clusters = n_clusters, algorithm= 'elkan')   
 kmeans.fit(df1_scaled)   
 
 ### agglomerative
-<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/1d2bae85-8c93-4a99-80a4-5d6405fc2aa6">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/5ea39b72-e3be-48f0-8c5c-2bab1e125c34">   
 
 agg = AgglomerativeClustering(n_clusters=3, linkage='ward')   
 agg_labels=agg.fit_predict(df1_scaled)    
 
 ### dbscan
-<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/ab231329-d5e2-4786-9d57-8b0e3b8649e2">   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/f83b13bc-cd93-4af4-9291-325abb0adfee">    
 
 Cluster Labels: [ 0 -1  0 -1 -1  0 -1 -1 -1]   
 dbscan결과 위와 같이 나왔고 이는 noise가 많고 clustering이 잘 되었다고 판단하기 어려워 해당 방법론을 기각했다.   
