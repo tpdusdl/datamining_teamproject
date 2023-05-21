@@ -81,7 +81,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 # 분석
 
-## 
+## 마포구
 ## EDA
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/909a4f7f-0306-4fe2-a6cf-13f00efab5e0">
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/795c2346-c2ec-4834-83f9-46812c63e226" width="700" height="300">
