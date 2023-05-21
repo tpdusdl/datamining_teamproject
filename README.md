@@ -182,6 +182,7 @@ cluster4 : 서교동
 분석의 논리적인 과정은 이하 마포구와 동일하게 진행하였고 그에 따른 결과는 다음과 같다.   
 best algorithm: agglomerative   
 n_clusters= 3, linkage = single, Silhouette Score: 0.4661810701236094   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/bb4dd39a-5cbf-4ba3-a490-2f8d984f473e">   
 
 cluster1 : 특징이 없다.   
 
@@ -199,6 +200,7 @@ cluster3 : 방이동, 가락동, 잠실동
 ### 동작구
 best algorithm: kmeans
 n_clusters= 3, algorithm= 'elkan', Silhouette Score: 0.464784226978624   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/ed312298-bff3-4909-8b95-8f893e5fdaf6">   
 
 클러스터 1 : 지하철 역, 병원많음   
 
@@ -216,6 +218,7 @@ n_clusters= 3, algorithm= 'elkan', Silhouette Score: 0.464784226978624
 ### 영등포구
 best algorithm: kmeans   
 n_clusters= 5, algorithm: 'elkan', Silhouette Score: 0.2808630292848594   
+<img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/f7e92489-055d-41f6-8194-7761a46a5eac">   
 
 클러스터 1 : 따릉이 대여소   
 
