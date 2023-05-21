@@ -161,7 +161,7 @@ cluster label 출력 결과, Cluster Labels: [-1  0 -1  0 -1 -1 -1  0 -1 -1 -1 -
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/3b5aea96-bcfc-4b8c-81be-c7646ce79fbf">   
 송파구 feature들의 데이터 분포를 확인해본 결과, 데이터 scaling이 필요하다고 판단했다.   
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/57c558d0-e832-4893-9152-8c44e0035c78">   
-견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.5 이하인경우인 약국수, 동물병원수, 지하철역수, 숙박업소수, 고등학교수, 병원 수 는 삭제했다.   
+견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.5 이하인 경우인 약국수, 동물병원수, 지하철역수, 숙박업소수, 고등학교수, 병원 수 는 삭제했다.   
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/7417db26-8020-4df0-87f2-0b3f763cee76">   
 삭제 후 상관계수에 이상이 없음을 확인하고 clustering을 진행했다.   
 
@@ -191,9 +191,11 @@ agg.fit(df_scaled)
 ## 동작구
 ### EDA
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/44f54187-6cea-4785-ae8f-7bc2a11a4369">   
+
 동작구 feature들의 데이터 분포를 확인해본 결과, 데이터 scaling이 필요하다고 판단했다.   
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/7c21135a-5b3f-481a-9fde-bf97c66a59a4">   
-견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.7 이하인경우인 기숙사,학교,pc방 은 삭제했다.    
+
+견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.7 이하인 경우인 기숙사,학교,pc방 은 삭제했다.    
 
 ### 전처리
 scaler = StandardScaler()   
@@ -216,9 +218,49 @@ agg_labels=agg.fit_predict(df1_scaled)
 ### dbscan
 <img src="https://github.com/tpdusdl/datamining_teamproject/assets/134132939/f83b13bc-cd93-4af4-9291-325abb0adfee">    
 
+db = DBSCAN(eps=1.5, min_samples=2)   
+cluster_labels2 = db.fit_predict(df1_scaled)   
 Cluster Labels: [ 0 -1  0 -1 -1  0 -1 -1 -1]   
 dbscan결과 위와 같이 나왔고 이는 noise가 많고 clustering이 잘 되었다고 판단하기 어려워 해당 방법론을 기각했다.   
 
+## 영등포구
+### EDA
+<img src="">   
+
+영등포구 feature들의 데이터 분포를 확인해본 결과, 데이터 scaling이 필요하다고 판단했다.   
+
+견인수에 몇 가지의 이상치가 발견돼 효과적인 clustering 을 위해 7,15,23 행을 제거했다.   
+df2 = df2.iloc[:,1:]   
+df2 = df2.drop(df2.index[[7, 15, 23]])   
+<img src="">    
+
+견인수와 다른 변수들간의 상관계수를 확인해 본 결과, 상관계수가 0.5 이하인 경우인 역, 기숙사,학교, pc방, 숙박업, 약국 , 병원, 중식 은 제외했다.
+
+### 전처리
+scaler = StandardScaler()
+df2_scaled = scaler.fit_transform(df2)
+
+### k-means
+<img src="">     
+
+위 결과를 참고하였을 때 실루엣 스코어는 n=2 일때 가장 높지만 스코어와 클러스터링 된 결과를 봤을때 최적의 결과는 n=5 일때로 판단했다.   
+kmeans = KMeans(n_clusters=5, algorithm='elkan', random_state=0)   
+kmeans.fit(df2_scaled)    
+
+### agglomerative
+<img src="">   
+
+agg = AgglomerativeClustering(n_clusters=4,linkage='single')   
+agg.fit(df2_scaled)   
+assignments_X_train = agg.labels_   
+
+### dbscan
+<img src="">    
+
+db = DBSCAN(eps=1.5, min_samples=2)   
+cluster_labels = db.fit_predict(df2_scaled)   
+Cluster Labels: [ 0  1  0 -1 -1  0  1 -1  0 -1 -1  0  0  0 -1  0 -1 -1  0  0  0 -1  0  0 -1 -1  0  0 -1  0]
+dbscan결과 위와 같이 나왔고 이는 noise가 많고 clustering이 잘 되었다고 판단하기 어려워 해당 방법론을 기각했다.   
 
 ## 결론
 ### 마포구
