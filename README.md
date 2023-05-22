@@ -18,9 +18,7 @@
 ![image](https://github.com/tpdusdl/datamining_teamproject/assets/74286434/e832d98b-20f4-4e6a-8e13-183cc66177dd)
  <br/>또한, 현재 전동킥보드 주차장 위치는 불법주차문제를 반영하지 못하고 있음을 확인하였다.
 따라서 주차 문제를 해결할 수 있는 알맞은 장소에 주차장을 설치해야한다.
-```
-Give examples
-```
+
 
 ## 분석 목적
 전동 킥보드의 불법 주차 문제를 수요에 충족하지 못하는 주차 스테이션의 수로 보고 전동 킥보드 주차장 증설을 제안함과 동시에 주차장이 필요한 입지를 구체적으로 선정해 주는 것을 분석 목적으로 한다.
@@ -28,17 +26,6 @@ Give examples
 
 
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## 데이터
 
@@ -369,48 +356,3 @@ n_clusters= 5, algorithm: 'elkan', Silhouette Score: 0.2808630292848594
 
 
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-
-
-## 데이터 출처
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
